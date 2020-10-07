@@ -20,6 +20,9 @@ router.post('/graphql', bodyParser.json(), graphqlExpress({
 router.post('/patents', bodyParser.json(), graphqlExpress({
   schema: Schema
 }));
+router.post('/researcher', bodyParser.json(), graphqlExpress({
+  schema: Schema
+}));
 router.get('/graphiql', graphiqlExpress({
   endpointURL: '/graphql'
 }));

@@ -1,13 +1,10 @@
 
 const patents = `
-	type patents {
-		country: String!
-		affliation: String
-		inventor: String
-		patentTitle: String
-		patentCount: String
-		code: String
-	}
-	`;
+type patents {
+    author_id: Int
+    code: String
+    title_localized: String
+}
+`;
 
 export default patents;
